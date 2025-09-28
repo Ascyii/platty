@@ -18,9 +18,11 @@ function love.keypressed(key)
     if key == "space" then
         player:jump()
     end
-
-    if key == "u" then
+    if key == "lshift" or key == "rshift" then
         player:fall()
+    end
+    if key == "escape" then
+		os.exit()
     end
 end
 
